@@ -89,12 +89,6 @@ Once you have `XGBoost.joblib`, deploy the prediction API:
 - First column is treated as ID, remaining columns are features
 - Ensure your input Excel file matches the feature structure used during method training
 
-## Contributions
-
-This project includes:
-- **`FINAL.ipynb`**: Complete analysis pipeline with data exploration, preprocessing, feature engineering, training multiple models, comparison, and selection. Retrain the method with your own data.
-- **`app.py`**: REST API backend using Flask to serve predictions on new data.
-- **Web interface**: Simple UI to upload data and view results.
 
 
 
