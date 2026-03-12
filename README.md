@@ -1,4 +1,4 @@
-# Detection_Anomaly
+# Detection_Anomaly_Electricity_Consumption
 
 Complete machine learning solution for predictions with XGBoost. Includes data analysis, model training (Jupyter notebook), REST API backend, and web interface for predictions.
 
@@ -95,4 +95,5 @@ This project includes:
 - **`FINAL.ipynb`**: Complete analysis pipeline with data exploration, preprocessing, feature engineering, training multiple models, comparison, and selection. Retrain the method with your own data.
 - **`app.py`**: REST API backend using Flask to serve predictions on new data.
 - **Web interface**: Simple UI to upload data and view results.
+
 
