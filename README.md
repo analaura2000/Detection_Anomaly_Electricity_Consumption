@@ -1,6 +1,6 @@
-# Detection_Anomaly_Electricity_Consumption
+# Detection_Anomaly
 
-This project implements a complete machine learning pipeline based on XGBoost, including data analysis, model training in a Jupyter notebook, a REST API backend, and a web interface for generating predictions.
+Complete machine learning solution for predictions with XGBoost. Includes data analysis, model training (Jupyter notebook), REST API backend, and web interface for predictions.
 
 ## Repository structure
 
@@ -89,6 +89,10 @@ Once you have `XGBoost.joblib`, deploy the prediction API:
 - First column is treated as ID, remaining columns are features
 - Ensure your input Excel file matches the feature structure used during method training
 
+## Contributions
 
-
+This project includes:
+- **`FINAL.ipynb`**: Complete analysis pipeline with data exploration, preprocessing, feature engineering, training multiple models, comparison, and selection. Retrain the method with your own data.
+- **`app.py`**: REST API backend using Flask to serve predictions on new data.
+- **Web interface**: Simple UI to upload data and view results.
 

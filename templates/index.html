@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FDS_FIE</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <!-- Top navigation bar -->
+    <div class="navbar">
+        <div class="titulo">FDS_FIE</div>
+        <img src="/static/logo.png" alt="Logo" style="height: 60px;">
+    </div>
+
+    <!-- Main container -->
+    <div class="container">
+        <!-- File selection panel -->
+        <div class="panel">
+            <label for="archivo">Upload XLSX file:</label>
+            <input type="file" id="archivo" accept=".xlsx" required><br><br>
+            
+            <!-- Button to select sheet -->
+            <button id="selectSheetButton" onclick="selectSheet()">Select Sheet</button>
+            <select id="sheet_name" style="display: none;"></select>
+            <br><br>
+
+            <button onclick="processData()">Predict</button>
+            <button onclick="exportExcel()">Download Excel</button>
+        </div>
+
+        <!-- Results table -->
+        <div class="tabla-resultados">
+            <table id="resultados">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Prediction</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div class="pagination" id="pagination"></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="/static/scripts.js"></script>
+
+    <script>
+        // Note: sheet selection is handled in /static/scripts.js
+        // The function `selectSheet()` is defined in that file and
+        // also detects when there is only one sheet to proceed automatically.
+    </script>
+</body>
+</html>
