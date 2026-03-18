@@ -6,7 +6,7 @@ Complete machine learning solution for predictions with XGBoost. Includes data a
 
 ```
 FINAL.ipynb         # Data analysis, preprocessing, model training, evaluation
-XGBoost.joblib      # Model Training with our dataset
+XGBoost.joblib      # Trained model with our dataset
 app.py              # REST API backend for predictions
 templates/
     index.html      # Web interface for predictions
